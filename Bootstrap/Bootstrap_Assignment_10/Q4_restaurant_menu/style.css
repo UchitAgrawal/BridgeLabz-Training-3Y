@@ -1,0 +1,2 @@
+/* .table-responsive keeps the menu usable on narrow screens. */
+figure img { width: 100%; min-height: 220px; object-fit: cover; }

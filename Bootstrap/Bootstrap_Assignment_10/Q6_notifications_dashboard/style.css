@@ -1,0 +1,2 @@
+/* Bootstrap 5 has no .well component; this bordered bg-light section recreates it. */
+.summary-well { border-color: #dee2e6 !important; }

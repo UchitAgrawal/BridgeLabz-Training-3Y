@@ -1,0 +1,9 @@
+/* Bootstrap custom properties theme the framework without replacing its grid. */
+:root { --bs-primary: #7c3aed; --bs-primary-rgb: 124,58,237; --bs-font-sans-serif: 'DM Sans', sans-serif; }
+body { font-family: var(--bs-font-sans-serif); background: #fbf9ff; }
+.site-header { background: #fff; border-bottom: 1px solid #eee; }
+.brand, nav a, .eyebrow { color: #6d28d9; }
+.eyebrow { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.card { border: 0; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(80,30,130,.12); }
+.card-img-top { height: 220px; object-fit: cover; }

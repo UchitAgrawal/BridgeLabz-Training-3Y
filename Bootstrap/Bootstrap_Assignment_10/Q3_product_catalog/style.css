@@ -1,0 +1,4 @@
+/* col-12 = mobile, col-sm-6 = two columns, col-md-3 = four columns. */
+.card { transition: transform .25s ease, box-shadow .25s ease; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem rgba(0,0,0,.15); }
+.card-img-top { height: 180px; object-fit: cover; }

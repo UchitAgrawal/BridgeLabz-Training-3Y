@@ -1,0 +1,4 @@
+/* Cards lift on hover; the Pro card is emphasized with Bootstrap color utilities. */
+.card { transition: transform .2s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(0,0,0,.14); }
+.featured { border: 0; }

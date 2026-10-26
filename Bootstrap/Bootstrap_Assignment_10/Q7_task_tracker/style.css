@@ -1,0 +1,2 @@
+/* d-flex + justify-content-between aligns task text and priority badges. */
+.list-group-item { gap: 1rem; }
