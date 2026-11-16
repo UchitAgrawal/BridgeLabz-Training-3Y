@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2 - Student Form Validator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="q2.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Registration Form</h1>
+    <form id="studentForm" novalidate>
+      <div class="field-row">
+        <label for="studentName">Name</label>
+        <input id="studentName" type="text" placeholder="Enter your name">
+        <p class="error" id="nameError"></p>
+      </div>
+      <div class="field-row">
+        <label for="studentEmail">Email</label>
+        <input id="studentEmail" type="text" placeholder="example@domain.com">
+        <p class="error" id="emailError"></p>
+      </div>
+      <div class="field-row">
+        <label for="studentPhone">Phone</label>
+        <input id="studentPhone" type="text" placeholder="10-digit phone number">
+        <p class="error" id="phoneError"></p>
+      </div>
+      <div class="field-row">
+        <label for="studentPassword">Password</label>
+        <input id="studentPassword" type="password" placeholder="Create a password">
+        <p class="error" id="passwordError"></p>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p class="message" id="formMessage" aria-live="polite"></p>
+  </main>
+</body>
+</html>
