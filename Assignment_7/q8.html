@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q8 - Custom Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="q8.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Custom Dropdown</h1>
+    <p>This dropdown is built with buttons and JavaScript, not a select element.</p>
+    <div id="customDropdown" class="dropdown">
+      <button id="dropdownToggle" type="button" aria-expanded="false">Choose a course</button>
+      <div id="dropdownMenu" class="dropdown-menu">
+        <button class="dropdown-option" type="button">Computer Science</button>
+        <button class="dropdown-option" type="button">Data Science</button>
+        <button class="dropdown-option" type="button">Information Technology</button>
+        <button class="dropdown-option" type="button">Electronics</button>
+      </div>
+    </div>
+    <p id="dropdownResult" class="result">No option selected.</p>
+  </main>
+</body>
+</html>

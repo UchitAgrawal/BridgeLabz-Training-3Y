@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 - Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="q3.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Multi-Step Registration Form</h1>
+    <p id="stepIndicator" class="step-indicator">Step 1 of 3</p>
+    <form id="multiStepForm" novalidate>
+      <section class="step active" data-step="0">
+        <div class="field">
+          <label for="fullName">Name</label>
+          <input id="fullName" type="text" placeholder="Enter your name">
+          <p class="error" id="nameError"></p>
+        </div>
+      </section>
+      <section class="step" data-step="1">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="example@domain.com">
+          <p class="error" id="emailError"></p>
+        </div>
+      </section>
+      <section class="step" data-step="2">
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="At least 6 characters">
+          <p class="error" id="passwordError"></p>
+        </div>
+      </section>
+      <div class="row">
+        <button id="backButton" type="button" class="secondary" disabled>Back</button>
+        <button id="nextButton" type="button">Next</button>
+      </div>
+    </form>
+    <div id="summary" class="result" hidden></div>
+  </main>
+</body>
+</html>
