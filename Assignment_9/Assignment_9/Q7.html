@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q7">
+  <title>Assignment 9 – Q7</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q7 – Search Courses</h1><p class="subtitle">Search course titles and descriptions in real time.</p></header>
+  <section class="panel">
+    <label for="courseSearch">Search courses</label><div class="row"><input id="courseSearch" type="search" placeholder="Try Python, data, design..." style="flex:1;min-width:230px"><button id="clearSearch" class="secondary">Clear Search</button></div>
+    <p id="courseCount" class="status" aria-live="polite">Showing all 6 courses.</p>
+    <div class="grid" id="courseList">
+      <article class="course"><h3 class="course-title">Python for Beginners</h3><p>Learn Python syntax, variables, loops, and functions.</p></article>
+      <article class="course"><h3 class="course-title">Data Structures and Algorithms</h3><p>Build problem-solving skills with arrays, trees, and graphs.</p></article>
+      <article class="course"><h3 class="course-title">Web Development with HTML and CSS</h3><p>Create responsive websites with semantic HTML and modern CSS.</p></article>
+      <article class="course"><h3 class="course-title">JavaScript Essentials</h3><p>Understand functions, events, DOM manipulation, and async code.</p></article>
+      <article class="course"><h3 class="course-title">Power BI and Data Analytics</h3><p>Transform data and build interactive business dashboards.</p></article>
+      <article class="course"><h3 class="course-title">UI/UX Design Fundamentals</h3><p>Learn user research, wireframes, prototypes, and visual design.</p></article>
+    </div>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q7.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Shared styling for Assignment 9 jQuery demonstrations */
+:root { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #1f2937; background: #f3f6fb; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 18px 56px; }
+main { max-width: 1050px; margin: 0 auto; }
+.site-header { margin-bottom: 24px; }
+.site-header a { color: #2457c5; text-decoration: none; }
+h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 3vw, 2.4rem); }
+h2 { margin-top: 0; }
+.subtitle { color: #64748b; margin: 0; }
+.panel, .card, .faq-item, .team-panel, .post, .widget, .course, .product, .offer-banner { background: #fff; border: 1px solid #dbe3ef; border-radius: 14px; box-shadow: 0 5px 18px rgba(15, 23, 42, .05); }
+.panel { padding: 22px; margin: 18px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+button, .button { border: 0; border-radius: 9px; padding: 10px 15px; background: #2457c5; color: white; font-weight: 650; cursor: pointer; }
+button:hover { filter: brightness(.94); }
+button.secondary { background: #e7edf7; color: #243247; }
+button.danger { background: #b42318; }
+button:focus-visible, input:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+input { border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px 12px; font: inherit; max-width: 100%; }
+label { display: block; font-weight: 650; margin: 12px 0 6px; }
+.muted, .help { color: #64748b; font-size: .92rem; }
+.status { padding: 10px 12px; margin-top: 12px; border-radius: 8px; background: #eef6ff; color: #174ea6; }
+.hidden { display: none; }
+.selected, .highlighted { outline: 3px solid #f4b740; background: #fff8e7 !important; }
+.pill { display: inline-block; border-radius: 999px; padding: 4px 9px; font-size: .78rem; font-weight: 700; background: #e8eef8; color: #334155; }
+/* Q2 */
+.product { position: relative; padding: 16px; cursor: pointer; transition: background .2s, transform .2s; }
+.product:hover { transform: translateY(-2px); }
+.product[data-discount="true"] { border: 2px solid #16a34a; }
+.product-details { display: none; margin-top: 10px; color: #475569; font-size: .9rem; }
+.favorite { float: right; background: transparent; color: #64748b; padding: 2px 6px; font-size: 1.3rem; }
+.favorite.selected { color: #dc2626; outline: 0; background: transparent !important; }
+/* Q3 */
+.faq-item { padding: 0; overflow: hidden; margin: 12px 0; }
+.faq-question { display: block; width: 100%; text-align: left; color: #1f2937; background: #fff; padding: 16px 18px; border-radius: 0; }
+.faq-answer { display: none; padding: 0 18px 18px; }
+.faq-answer input { width: min(100%, 330px); }
+/* Q4 */
+.offer-banner { padding: 20px; margin: 12px 0; min-height: 115px; }
+.offer-banner h3 { margin: 0 0 7px; }
+.banner-controls { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+/* Q5 */
+.team-panel { padding: 18px; margin: 14px 0; }
+.department-title { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.employee { padding: 12px; margin: 10px 0 0; border: 1px solid #e2e8f0; border-radius: 10px; background: #fbfdff; }
+.employee-name { font-weight: 700; }
+.contact-info { display: none; color: #526174; font-size: .9rem; margin-top: 6px; }
+/* Q6 */
+.topic-list { display: grid; gap: 10px; margin-top: 16px; }
+.topic { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px; border: 1px solid #dbe3ef; border-radius: 10px; background: white; }
+.topic button { white-space: nowrap; }
+/* Q7 */
+.course { padding: 15px; }
+.course h3 { margin: 0 0 5px; }
+.course mark { padding: 0 2px; border-radius: 3px; }
+/* Q8 */
+.post { padding: 16px; margin: 12px 0; }
+.post h3 { margin: 0 0 7px; }
+.post-tag { display: inline-block; margin: 5px 5px 0 0; padding: 4px 8px; border-radius: 6px; background: #e8eef8; font-size: .78rem; }
+/* Q9 */
+.widget { padding: 18px; min-height: 145px; }
+.widget.active-widget { border: 2px solid #2457c5; background: #eef4ff; }
+.carousel-slide { display: none; padding: 15px; border-radius: 10px; background: #f0f5ff; min-height: 72px; }
+.carousel-slide:first-child { display: block; }
+.tooltip-box { position: absolute; z-index: 5; display: none; padding: 7px 10px; border-radius: 7px; color: white; background: #172554; font-size: .82rem; pointer-events: none; }
+.modal-backdrop { display: none; position: fixed; inset: 0; z-index: 20; background: rgba(15,23,42,.58); align-items: center; justify-content: center; padding: 18px; }
+.modal { width: min(440px, 100%); background: white; border-radius: 16px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+/* Q10 */
+.form-field { margin: 14px 0; }
+.form-field input { width: min(100%, 480px); display: block; }
+.field-error { min-height: 20px; color: #b42318; font-size: .85rem; margin-top: 4px; }
+.success { padding: 14px; border: 1px solid #86c99b; border-radius: 9px; background: #effaf2; color: #176b32; }
+@media (max-width: 600px) { body { padding: 22px 12px 40px; } .panel { padding: 16px; } }

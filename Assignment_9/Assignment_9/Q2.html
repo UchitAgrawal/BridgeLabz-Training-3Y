@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q2">
+  <title>Assignment 9 – Q2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q2 – Product Highlight</h1><p class="subtitle">Select products, reveal details on hover, favorite items, and check stock.</p></header>
+  <section class="panel"><p class="help">Click a product card to highlight it. Hover to see details. Discounted products have a green border.</p>
+    <div class="grid" id="productList">
+      <article class="product" data-discount="true" data-stock="in" tabindex="0"><button class="favorite" aria-label="Favorite Wireless Headphones">♡</button><span class="pill">20% OFF</span><h3>Wireless Headphones</h3><p>₹2,399</p><div class="product-details">Noise cancellation, 30-hour battery, and Bluetooth 5.3.</div></article>
+      <article class="product" data-discount="false" data-stock="in" tabindex="0"><button class="favorite" aria-label="Favorite Smart Watch">♡</button><h3>Smart Watch</h3><p>₹3,499</p><div class="product-details">Fitness tracking, heart-rate monitor, and water resistance.</div></article>
+      <article class="product" data-discount="true" data-stock="out" tabindex="0"><button class="favorite" aria-label="Favorite Mechanical Keyboard">♡</button><span class="pill">15% OFF</span><h3>Mechanical Keyboard</h3><p>₹4,249</p><div class="product-details">Tactile switches, RGB lighting, and a compact layout.</div></article>
+      <article class="product" data-discount="false" data-stock="in" tabindex="0"><button class="favorite" aria-label="Favorite USB-C Hub">♡</button><h3>USB-C Hub</h3><p>₹1,299</p><div class="product-details">Seven ports including HDMI, USB-A, and SD card reader.</div></article>
+      <article class="product" data-discount="true" data-stock="in" tabindex="0"><button class="favorite" aria-label="Favorite Portable SSD">♡</button><span class="pill">10% OFF</span><h3>Portable SSD</h3><p>₹5,399</p><div class="product-details">Fast external storage with a durable, travel-friendly body.</div></article>
+    </div>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q2.js"></script>
+</body>
+</html>

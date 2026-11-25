@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q10">
+  <title>Assignment 9 – Q10</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q10 – Registration Form Validation</h1><p class="subtitle">Client-side validation for name, email format and uniqueness, and password length.</p></header>
+  <section class="panel">
+    <form id="registrationForm" novalidate>
+      <div class="form-field"><label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" placeholder="Enter your name" autocomplete="name"><div class="field-error" id="nameError"></div></div>
+      <div class="form-field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"><div class="field-error" id="emailError"></div><p class="help">Demo uniqueness check: registered@example.com and student@example.com are already in use.</p></div>
+      <div class="form-field"><label for="password">Password</label><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password"><div class="field-error" id="passwordError"></div></div>
+      <button type="submit">Create Account</button>
+    </form>
+    <div id="registrationResult" aria-live="polite"></div>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q10.js"></script>
+</body>
+</html>

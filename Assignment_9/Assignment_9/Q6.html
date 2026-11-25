@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q6">
+  <title>Assignment 9 – Q6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q6 – Event Subscription Panel</h1><p class="subtitle">Manage notification status and dynamically add or remove topics.</p></header>
+  <section class="panel">
+    <h2>Notification settings</h2><p id="notificationStatus" class="status" aria-live="polite">Notifications are currently disabled.</p>
+    <div class="row"><button id="subscribe">Subscribe</button><button id="unsubscribe" class="secondary">Unsubscribe</button></div>
+    <hr style="border:0;border-top:1px solid #e2e8f0;margin:22px 0">
+    <label for="newTopic">Add a subscription topic</label><div class="row"><input id="newTopic" placeholder="e.g. Web Development"><button id="addTopic">Add Topic</button></div>
+    <div class="topic-list" id="topicList">
+      <div class="topic"><span>Technology News</span><div class="row"><button class="topic-subscribe">Subscribe to topic</button><button class="remove-topic danger">Remove</button></div></div>
+      <div class="topic"><span>Campus Events</span><div class="row"><button class="topic-subscribe">Subscribe to topic</button><button class="remove-topic danger">Remove</button></div></div>
+      <div class="topic"><span>Career Updates</span><div class="row"><button class="topic-subscribe">Subscribe to topic</button><button class="remove-topic danger">Remove</button></div></div>
+    </div>
+    <div id="subscriptionMessages" aria-live="polite"></div>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q6.js"></script>
+</body>
+</html>

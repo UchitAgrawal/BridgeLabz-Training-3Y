@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q1">
+  <title>Assignment 9 – Q1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q1 – Welcome Page Greeting</h1><p class="subtitle">Time-based greeting, motivational quote, visibility toggle, and click alert.</p></header>
+  <section class="panel">
+    <label for="visitorName">Your name</label><input id="visitorName" type="text" value="Guest" placeholder="Enter your name">
+    <h2 id="greeting" role="button" tabindex="0" aria-label="Click greeting for a message">Welcome!</h2>
+    <p id="welcomeMessage">We are glad you are here. Explore, learn, and make today count.</p>
+    <div class="row"><button id="changeGreeting">Change Greeting</button><button id="toggleWelcome" class="secondary">Hide Welcome Message</button></div>
+    <p class="help">Click the greeting text to display an alert.</p>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q1.js"></script>
+</body>
+</html>

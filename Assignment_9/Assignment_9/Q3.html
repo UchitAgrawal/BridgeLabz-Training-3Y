@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q3">
+  <title>Assignment 9 – Q3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q3 – Interactive FAQ</h1><p class="subtitle">Click a question to expand it; double-click any question to collapse all answers.</p></header>
+  <section class="panel" id="faqList">
+    <article class="faq-item"><button class="faq-question">1. How do I create an account?</button><div class="faq-answer"><p>Choose Sign Up, enter your details, and verify your email address.</p><label for="faqEmail1">Email for account help</label><input id="faqEmail1" type="email" placeholder="you@example.com"></div></article>
+    <article class="faq-item"><button class="faq-question">2. Can I reset my password?</button><div class="faq-answer"><p>Yes. Use the Forgot Password link on the sign-in page.</p><label for="faqEmail2">Account email</label><input id="faqEmail2" type="email" placeholder="you@example.com"></div></article>
+    <article class="faq-item"><button class="faq-question">3. Which payment methods are accepted?</button><div class="faq-answer"><p>Available options may include cards, UPI, and supported digital wallets.</p><label for="faqEmail3">Send me payment updates</label><input id="faqEmail3" type="email" placeholder="you@example.com"></div></article>
+    <article class="faq-item"><button class="faq-question">4. Can I cancel an order?</button><div class="faq-answer"><p>Open Orders, choose the eligible order, and select Cancel.</p><label for="faqEmail4">Order contact email</label><input id="faqEmail4" type="email" placeholder="you@example.com"></div></article>
+    <article class="faq-item"><button class="faq-question">5. How can I contact support?</button><div class="faq-answer"><p>Use the Help Centre contact form to reach the support team.</p><label for="faqEmail5">Your email</label><input id="faqEmail5" type="email" placeholder="you@example.com"></div></article>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q3.js"></script>
+</body>
+</html>

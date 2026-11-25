@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q9 multi-version widgets">
+  <title>Assignment 9 – Q9</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q9 – Multi-jQuery Widgets</h1><p class="subtitle">Two independent jQuery versions using noConflict() without overwriting each other.</p></header>
+  <section class="panel">
+    <div class="row"><span class="pill">jQuery 1.12.4: carousel + active widget</span><span class="pill">jQuery 3.7.1: modal + tooltips</span></div>
+    <div class="grid" style="margin-top:16px">
+      <section class="widget" id="carouselWidget"><h2>Carousel (jQuery 1)</h2><div class="carousel-slide">Slide 1: Learn, build, and grow.</div><div class="carousel-slide">Slide 2: Keep your projects organized.</div><div class="carousel-slide">Slide 3: Practice a little every day.</div><p class="help">Slides rotate automatically every 2.5 seconds.</p></section>
+      <section class="widget" id="notificationWidget"><h2>Notifications (jQuery 2)</h2><p>Open a notification modal using the button.</p><button id="openModal" class="tooltip-target" data-tip="Open the notification dialog">Show Notification</button></section>
+      <section class="widget" id="analyticsWidget"><h2>Analytics Widget</h2><p>Click this widget or the others to make it active.</p><button class="activate-widget secondary">Set Active</button></section>
+      <section class="widget" id="tasksWidget"><h2>Tasks Widget</h2><p>Hover the buttons and headings to see tooltips.</p><button class="activate-widget secondary tooltip-target" data-tip="Make the tasks widget active">Set Active</button></section>
+    </div>
+    <div class="tooltip-box" id="customTooltip" role="tooltip"></div>
+  </section>
+  <div class="modal-backdrop" id="notificationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><h2 id="modalTitle">New Notification</h2><p>Your dashboard is up to date. You have no urgent alerts.</p><button id="closeModal">Close</button></div></div>
+</main>
+  <!-- Load jQuery 1, save its reference, then load jQuery 2 and save that reference. -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>window.jqV1 = jQuery.noConflict(true);</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>window.jqV2 = jQuery.noConflict(true);</script>
+  <script src="Q9.js"></script>
+</body>
+</html>

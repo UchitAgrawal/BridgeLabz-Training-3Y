@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q4">
+  <title>Assignment 9 – Q4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q4 – Special Offer Banner</h1><p class="subtitle">Try hide/show, slide, fade, and automatic five-second rotation.</p></header>
+  <section class="panel">
+    <div class="row"><button id="showBanners">Show Hidden Banners</button><button id="slideUp" class="secondary">Slide Up</button><button id="slideDown" class="secondary">Slide Down</button><button id="fadeOut" class="secondary">Fade Out</button><button id="fadeIn" class="secondary">Fade In</button></div>
+    <div id="bannerStage">
+      <article class="offer-banner"><h3>Summer Tech Sale</h3><p>Save up to 30% on selected accessories.</p><button class="hide-banner danger">Hide This Banner</button></article>
+      <article class="offer-banner"><h3>Student Specials</h3><p>Exclusive deals for students on learning essentials.</p><button class="hide-banner danger">Hide This Banner</button></article>
+      <article class="offer-banner"><h3>Free Delivery Weekend</h3><p>Enjoy free delivery on qualifying orders.</p><button class="hide-banner danger">Hide This Banner</button></article>
+      <article class="offer-banner"><h3>Bundle & Save</h3><p>Build a bundle and get an extra discount.</p><button class="hide-banner danger">Hide This Banner</button></article>
+    </div>
+    <p id="bannerStatus" class="status" aria-live="polite">Automatic rotation is running. Banners rotate every 5 seconds.</p>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q4.js"></script>
+</body>
+</html>

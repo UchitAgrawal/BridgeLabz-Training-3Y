@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Assignment 9 jQuery practical – Q5">
+  <title>Assignment 9 – Q5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header"><p><a href="index.html">← Assignment 9 home</a></p><h1>Q5 – Team Members Directory</h1><p class="subtitle">Explore reporting lines and department relationships.</p></header>
+  <section class="panel">
+    <div class="row"><button id="randomEmployee">Select Random Employee</button><button id="collapseTeam" class="secondary">Collapse / Expand Team</button></div>
+    <section class="team-panel" id="teamPanel">
+      <div class="team-controls"><h2>Product & Engineering Team</h2><p class="help">Use the department buttons to highlight direct department members.</p></div>
+      <section class="department" data-department="Engineering">
+        <div class="department-title"><h3>Engineering</h3><button class="department-button secondary">Highlight Engineering Members</button></div>
+        <article class="employee" data-employee="maya" data-manager="none"><div class="employee-heading"><span class="employee-name">Maya Sharma</span> <span class="pill">Manager</span></div><div class="contact-info">Email: maya@example.com · Ext: 101</div></article>
+        <article class="employee" data-employee="aarav" data-manager="maya"><div class="employee-heading"><span class="employee-name">Aarav Verma</span></div><div class="contact-info">Email: aarav@example.com · Ext: 112</div></article>
+        <article class="employee" data-employee="isha" data-manager="maya"><div class="employee-heading"><span class="employee-name">Isha Gupta</span></div><div class="contact-info">Email: isha@example.com · Ext: 113</div></article>
+        <article class="employee" data-employee="kabir" data-manager="maya"><div class="employee-heading"><span class="employee-name">Kabir Singh</span></div><div class="contact-info">Email: kabir@example.com · Ext: 114</div></article>
+      </section>
+      <section class="department" data-department="Design">
+        <div class="department-title"><h3>Design</h3><button class="department-button secondary">Highlight Design Members</button></div>
+        <article class="employee" data-employee="riya" data-manager="none"><div class="employee-heading"><span class="employee-name">Riya Mehta</span> <span class="pill">Manager</span></div><div class="contact-info">Email: riya@example.com · Ext: 201</div></article>
+        <article class="employee" data-employee="dev" data-manager="riya"><div class="employee-heading"><span class="employee-name">Dev Patel</span></div><div class="contact-info">Email: dev@example.com · Ext: 212</div></article>
+        <article class="employee" data-employee="sana" data-manager="riya"><div class="employee-heading"><span class="employee-name">Sana Khan</span></div><div class="contact-info">Email: sana@example.com · Ext: 213</div></article>
+      </section>
+    </section>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q5.js"></script>
+</body>
+</html>
